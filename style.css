@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --color-1: #F9F6F3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Inter;
+    color: var(--text-color);
+}
+
+body{
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+nav{
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-family: Inter;
+    font-weight: Bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header, section{
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em; 
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.text-container p {
+    margin: 0.75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+section{
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section p{
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+@media(max-width: 903px){
+    header{
+        text-align: center;
+    }
+
+    header .text-container{
+        padding-top: 0;
+    }
+}
